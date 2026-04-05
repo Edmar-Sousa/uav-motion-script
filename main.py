@@ -10,21 +10,20 @@ def main():
 
     
 
-    # trajectory_planner = TrajectoryPlanner()
+    trajectory_planner = TrajectoryPlanner()
 
-    # position_controller = PositionController(trajectory_planner)
-    # altitude_controller = AltitudeController(position_controller)
-    # motor_controller = MotorController(position_controller, altitude_controller)
+    position_controller = PositionController(trajectory_planner)
+    altitude_controller = AltitudeController(position_controller)
+    motor_controller = MotorController(position_controller, altitude_controller)
     
-    # vant = Vant(
-    #     motor_controller=motor_controller,
-    #     position_controller=position_controller,
-    #     altitude_controller=altitude_controller
-    # )
-    # draw_vant = DrawVant(vant)
+    vant = Vant(
+        motor_controller=motor_controller,
+        position_controller=position_controller,
+        altitude_controller=altitude_controller
+    )
+    draw_vant = DrawVant(vant)
     
-    # draw_vant.show()
-    pass
+    draw_vant.show()
 
 
 if __name__ == '__main__':
