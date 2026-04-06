@@ -3,8 +3,27 @@ import os
 
 
 class OsmHandler(osmium.SimpleHandler):
+    def __init__(self):
+        super().__init__()
+
+        self.food_tags = ['fast_food', 'restaurant', 'department_store']
+        self.keys = ['amenity', 'shop']
+
+    def way(self, n):
+        for tag in n.tags:
+            # filtrando por tipo restaurante ou fast food
+            if tag.k in self.keys and tag.v in self.food_tags:
+                print()
+                
+                for t in n.tags:
+                    print(t)
+                
+                for node in n.nodes: 
+                    print(node.lat, node.lon)
+
     def node(self, n):
-        print(n.location.lat, n.location.lon)
+        # print(n)
+        pass
 
 
 class TrajectoryPlanner:
@@ -21,4 +40,4 @@ class TrajectoryPlanner:
     def generate(self):
         self.__check_file_osm_exists__()
 
-        self.handler_osm.apply_file(self.osm_path)
+        self.osm_handler.apply_file(self.osm_path, locations=True)
