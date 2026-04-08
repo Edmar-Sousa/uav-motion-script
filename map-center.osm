@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3074627 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="-4.9707260" minlon="-39.0214530" maxlat="-4.9686260" maxlon="-39.0162440"/>
+ <node id="252615145" visible="true" version="8" changeset="80927948" timestamp="2020-02-13T01:13:18Z" user="LeutascherAche" uid="10409646" lat="-4.9692329" lon="-39.0161718"/>
+ <node id="252615170" visible="true" version="6" changeset="137212499" timestamp="2023-06-11T16:56:52Z" user="CandidoCunha" uid="7152721" lat="-4.9702018" lon="-39.0241596"/>
+ <node id="252615529" visible="true" version="8" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9688982" lon="-39.0173348"/>
+ <node id="252615600" visible="true" version="6" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692555" lon="-39.0168282"/>
+ <node id="252616018" visible="true" version="7" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692099" lon="-39.0173322"/>
+ <node id="252616178" visible="true" version="6" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9700377" lon="-39.0173113"/>
+ <node id="252616203" visible="true" version="7" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9692489" lon="-39.0195833"/>
+ <node id="252616254" visible="true" version="5" changeset="137212499" timestamp="2023-06-11T16:56:52Z" user="CandidoCunha" uid="7152721" lat="-4.9701353" lon="-39.0232605"/>
+ <node id="252616261" visible="true" version="6" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9700363" lon="-39.0168379"/>
+ <node id="252616419" visible="true" version="7" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9685590" lon="-39.0195844"/>
+ <node id="252616785" visible="true" version="7" changeset="80878660" timestamp="2020-02-12T03:38:13Z" user="LeutascherAche" uid="10409646" lat="-4.9685280" lon="-39.0184768"/>
+ <node id="252616801" visible="true" version="8" changeset="137306566" timestamp="2023-06-14T01:05:19Z" user="CandidoCunha" uid="7152721" lat="-4.9688928" lon="-39.0168328"/>
+ <node id="252616853" visible="true" version="7" changeset="80837545" timestamp="2020-02-11T08:33:08Z" user="LeutascherAche" uid="10409646" lat="-4.9700711" lon="-39.0184298"/>
+ <node id="252644714" visible="true" version="6" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9701091" lon="-39.0195763">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+ </node>
+ <node id="1868898588" visible="true" version="3" changeset="80877439" timestamp="2020-02-12T03:02:58Z" user="LeutascherAche" uid="10409646" lat="-4.9692077" lon="-39.0154897"/>
+ <node id="1868903739" visible="true" version="7" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9713687" lon="-39.0195336"/>
+ <node id="2014760283" visible="true" version="5" changeset="78514827" timestamp="2019-12-17T08:33:42Z" user="KazakhSteppe" uid="10334811" lat="-4.9685594" lon="-39.0206967"/>
+ <node id="2014760293" visible="true" version="4" changeset="137212499" timestamp="2023-06-11T16:56:52Z" user="CandidoCunha" uid="7152721" lat="-4.9692482" lon="-39.0228764"/>
+ <node id="2014760294" visible="true" version="8" changeset="137212499" timestamp="2023-06-11T16:56:52Z" user="CandidoCunha" uid="7152721" lat="-4.9692448" lon="-39.0207019"/>
+ <node id="2014760295" visible="true" version="4" changeset="137212499" timestamp="2023-06-11T16:56:52Z" user="CandidoCunha" uid="7152721" lat="-4.9692524" lon="-39.0217941"/>
+ <node id="2014760297" visible="true" version="5" changeset="137212499" timestamp="2023-06-11T16:56:52Z" user="CandidoCunha" uid="7152721" lat="-4.9701455" lon="-39.0217836"/>
+ <node id="2014760300" visible="true" version="6" changeset="164121587" timestamp="2025-03-26T13:15:42Z" user="LakeNipigon" uid="22048896" lat="-4.9718685" lon="-39.0195145"/>
+ <node id="2068982575" visible="true" version="4" changeset="80881907" timestamp="2020-02-12T05:07:17Z" user="LeutascherAche" uid="10409646" lat="-4.9713257" lon="-39.0172537"/>
+ <node id="2068982576" visible="true" version="4" changeset="80881907" timestamp="2020-02-12T05:07:17Z" user="LeutascherAche" uid="10409646" lat="-4.9713253" lon="-39.0168056"/>
+ <node id="2068982578" visible="true" version="4" changeset="80881907" timestamp="2020-02-12T05:07:17Z" user="LeutascherAche" uid="10409646" lat="-4.9718427" lon="-39.0172336"/>
+ <node id="2068982579" visible="true" version="6" changeset="80881907" timestamp="2020-02-12T05:07:17Z" user="LeutascherAche" uid="10409646" lat="-4.9718320" lon="-39.0168048"/>
+ <node id="2068982582" visible="true" version="5" changeset="80878660" timestamp="2020-02-12T03:38:13Z" user="LeutascherAche" uid="10409646" lat="-4.9725235" lon="-39.0172096"/>
+ <node id="2068982584" visible="true" version="3" changeset="80881907" timestamp="2020-02-12T05:07:17Z" user="LeutascherAche" uid="10409646" lat="-4.9742744" lon="-39.0171383"/>
+ <node id="2633376227" visible="true" version="4" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9705264" lon="-39.0250182">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="2633376257" visible="true" version="2" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9692529" lon="-39.0240023"/>
+ <node id="2633376258" visible="true" version="4" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9692684" lon="-39.0250498"/>
+ <node id="2633376316" visible="true" version="3" changeset="137212499" timestamp="2023-06-11T16:56:52Z" user="CandidoCunha" uid="7152721" lat="-4.9701420" lon="-39.0238051"/>
+ <node id="2633376318" visible="true" version="3" changeset="137212499" timestamp="2023-06-11T16:56:52Z" user="CandidoCunha" uid="7152721" lat="-4.9701446" lon="-39.0228866"/>
+ <node id="2633376342" visible="true" version="5" changeset="80878660" timestamp="2020-02-12T03:38:13Z" user="LeutascherAche" uid="10409646" lat="-4.9700417" lon="-39.0162183">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="2633376343" visible="true" version="6" changeset="80927948" timestamp="2020-02-13T01:13:18Z" user="LeutascherAche" uid="10409646" lat="-4.9692334" lon="-39.0162304"/>
+ <node id="2633398086" visible="true" version="4" changeset="78514827" timestamp="2019-12-17T08:33:42Z" user="KazakhSteppe" uid="10334811" lat="-4.9724770" lon="-39.0206292"/>
+ <node id="2633398092" visible="true" version="4" changeset="80881907" timestamp="2020-02-12T05:07:17Z" user="LeutascherAche" uid="10409646" lat="-4.9724490" lon="-39.0172161"/>
+ <node id="2633398094" visible="true" version="2" changeset="80878660" timestamp="2020-02-12T03:38:13Z" user="LeutascherAche" uid="10409646" lat="-4.9724485" lon="-39.0167868"/>
+ <node id="2633398100" visible="true" version="4" changeset="80837545" timestamp="2020-02-11T08:33:08Z" user="LeutascherAche" uid="10409646" lat="-4.9713350" lon="-39.0183949"/>
+ <node id="2633398103" visible="true" version="6" changeset="61866657" timestamp="2018-08-21T19:24:04Z" user="Cicero Costa" uid="4673010" lat="-4.9718813" lon="-39.0206480"/>
+ <node id="2633398126" visible="true" version="3" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9677470" lon="-39.0196393"/>
+ <node id="3793680789" visible="true" version="6" changeset="80891732" timestamp="2020-02-12T08:17:19Z" user="LeutascherAche" uid="10409646" lat="-4.9692188" lon="-39.0184446"/>
+ <node id="3793680790" visible="true" version="5" changeset="80927948" timestamp="2020-02-13T01:13:18Z" user="LeutascherAche" uid="10409646" lat="-4.9713311" lon="-39.0178358"/>
+ <node id="3793680791" visible="true" version="2" changeset="46321076" timestamp="2017-02-22T22:18:01Z" user="Cicero Costa" uid="4673010" lat="-4.9706629" lon="-39.0178506"/>
+ <node id="3793680815" visible="true" version="5" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9725567" lon="-39.0206299"/>
+ <node id="3793680816" visible="true" version="5" changeset="137212499" timestamp="2023-06-11T16:56:52Z" user="CandidoCunha" uid="7152721" lat="-4.9701247" lon="-39.0206878">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+ </node>
+ <node id="3793680817" visible="true" version="5" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9712918" lon="-39.0195397"/>
+ <node id="3793680818" visible="true" version="5" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9713110" lon="-39.0206631"/>
+ <node id="3793680821" visible="true" version="6" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9707972" lon="-39.0206725"/>
+ <node id="3793680822" visible="true" version="3" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9707911" lon="-39.0195533"/>
+ <node id="3793680825" visible="true" version="5" changeset="137212499" timestamp="2023-06-11T16:56:52Z" user="CandidoCunha" uid="7152721" lat="-4.9701669" lon="-39.0239557"/>
+ <node id="3916515106" visible="true" version="2" changeset="137306566" timestamp="2023-06-14T01:05:19Z" user="CandidoCunha" uid="7152721" lat="-4.9685718" lon="-39.0172943"/>
+ <node id="3916515107" visible="true" version="2" changeset="137306566" timestamp="2023-06-14T01:05:19Z" user="CandidoCunha" uid="7152721" lat="-4.9685679" lon="-39.0169239"/>
+ <node id="3916515108" visible="true" version="2" changeset="137306566" timestamp="2023-06-14T01:05:19Z" user="CandidoCunha" uid="7152721" lat="-4.9688807" lon="-39.0169206"/>
+ <node id="3916515109" visible="true" version="2" changeset="137306566" timestamp="2023-06-14T01:05:19Z" user="CandidoCunha" uid="7152721" lat="-4.9688846" lon="-39.0172910"/>
+ <node id="3916515110" visible="true" version="2" changeset="137306566" timestamp="2023-06-14T01:05:19Z" user="CandidoCunha" uid="7152721" lat="-4.9689158" lon="-39.0172954"/>
+ <node id="3916515111" visible="true" version="2" changeset="137306566" timestamp="2023-06-14T01:05:19Z" user="CandidoCunha" uid="7152721" lat="-4.9689106" lon="-39.0169146"/>
+ <node id="3916515112" visible="true" version="3" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9691379" lon="-39.0169116"/>
+ <node id="3916515113" visible="true" version="2" changeset="137306566" timestamp="2023-06-14T01:05:19Z" user="CandidoCunha" uid="7152721" lat="-4.9691431" lon="-39.0172931"/>
+ <node id="3916515114" visible="true" version="3" changeset="178646871" timestamp="2026-02-16T20:01:05Z" user="kaartense" uid="10292935" lat="-4.9694379" lon="-39.0172711"/>
+ <node id="3916515115" visible="true" version="3" changeset="178646871" timestamp="2026-02-16T20:01:05Z" user="kaartense" uid="10292935" lat="-4.9699124" lon="-39.0172596"/>
+ <node id="3916515116" visible="true" version="3" changeset="178646871" timestamp="2026-02-16T20:01:05Z" user="kaartense" uid="10292935" lat="-4.9699040" lon="-39.0169118"/>
+ <node id="3916515117" visible="true" version="3" changeset="178646871" timestamp="2026-02-16T20:01:05Z" user="kaartense" uid="10292935" lat="-4.9694296" lon="-39.0169233"/>
+ <node id="3916540867" visible="true" version="3" changeset="126748361" timestamp="2022-09-28T16:40:46Z" user="Gustavo22Soares" uid="10460642" lat="-4.9693734" lon="-39.0206188">
+  <tag k="amenity" v="bank"/>
+  <tag k="brand" v="Caixa Econômica Federal"/>
+  <tag k="brand:wikidata" v="Q835283"/>
+  <tag k="name" v="Caixa Econômica Federal"/>
+ </node>
+ <node id="4051556923" visible="true" version="2" changeset="41537057" timestamp="2016-08-18T15:57:30Z" user="Daniel de Góes Nepomuceno" uid="1717892" lat="-4.9693192" lon="-39.0180607"/>
+ <node id="4051556924" visible="true" version="2" changeset="41537057" timestamp="2016-08-18T15:57:30Z" user="Daniel de Góes Nepomuceno" uid="1717892" lat="-4.9695263" lon="-39.0180538"/>
+ <node id="4051556925" visible="true" version="2" changeset="41537057" timestamp="2016-08-18T15:57:30Z" user="Daniel de Góes Nepomuceno" uid="1717892" lat="-4.9695368" lon="-39.0183702"/>
+ <node id="4051556926" visible="true" version="2" changeset="41537057" timestamp="2016-08-18T15:57:30Z" user="Daniel de Góes Nepomuceno" uid="1717892" lat="-4.9693297" lon="-39.0183771"/>
+ <node id="4051556931" visible="true" version="1" changeset="37715100" timestamp="2016-03-09T18:13:24Z" user="Klevinho Santos" uid="3653414" lat="-4.9688697" lon="-39.0176280"/>
+ <node id="4051556932" visible="true" version="1" changeset="37715100" timestamp="2016-03-09T18:13:24Z" user="Klevinho Santos" uid="3653414" lat="-4.9688773" lon="-39.0173502"/>
+ <node id="4051556933" visible="true" version="1" changeset="37715100" timestamp="2016-03-09T18:13:24Z" user="Klevinho Santos" uid="3653414" lat="-4.9689936" lon="-39.0173525"/>
+ <node id="4051556934" visible="true" version="1" changeset="37715100" timestamp="2016-03-09T18:13:24Z" user="Klevinho Santos" uid="3653414" lat="-4.9689901" lon="-39.0176292"/>
+ <node id="4356017705" visible="true" version="1" changeset="41537057" timestamp="2016-08-18T15:57:27Z" user="Daniel de Góes Nepomuceno" uid="1717892" lat="-4.9701191" lon="-39.0168579"/>
+ <node id="4356017706" visible="true" version="1" changeset="41537057" timestamp="2016-08-18T15:57:27Z" user="Daniel de Góes Nepomuceno" uid="1717892" lat="-4.9701202" lon="-39.0170237"/>
+ <node id="4356017707" visible="true" version="1" changeset="41537057" timestamp="2016-08-18T15:57:27Z" user="Daniel de Góes Nepomuceno" uid="1717892" lat="-4.9701954" lon="-39.0168574"/>
+ <node id="4356017708" visible="true" version="1" changeset="41537057" timestamp="2016-08-18T15:57:27Z" user="Daniel de Góes Nepomuceno" uid="1717892" lat="-4.9701964" lon="-39.0170232"/>
+ <node id="4356017709" visible="true" version="1" changeset="41537057" timestamp="2016-08-18T15:57:27Z" user="Daniel de Góes Nepomuceno" uid="1717892" lat="-4.9704061" lon="-39.0168529"/>
+ <node id="4356017710" visible="true" version="1" changeset="41537057" timestamp="2016-08-18T15:57:27Z" user="Daniel de Góes Nepomuceno" uid="1717892" lat="-4.9704078" lon="-39.0171199"/>
+ <node id="4356017711" visible="true" version="1" changeset="41537057" timestamp="2016-08-18T15:57:27Z" user="Daniel de Góes Nepomuceno" uid="1717892" lat="-4.9704767" lon="-39.0168524"/>
+ <node id="4356017712" visible="true" version="1" changeset="41537057" timestamp="2016-08-18T15:57:27Z" user="Daniel de Góes Nepomuceno" uid="1717892" lat="-4.9704784" lon="-39.0171194"/>
+ <node id="4541812091" visible="true" version="1" changeset="44218054" timestamp="2016-12-06T19:41:21Z" user="Elder Cavalcante Gomes" uid="4933168" lat="-4.9701385" lon="-39.0196858">
+  <tag k="amenity" v="bar"/>
+  <tag k="name" v="Célio Bar"/>
+  <tag k="name:pt" v="Célio Bar"/>
+ </node>
+ <node id="4663218637" visible="true" version="4" changeset="55227153" timestamp="2018-01-07T04:15:24Z" user="Cicero Costa" uid="4673010" lat="-4.9701177" lon="-39.0164745">
+  <tag k="comment" v="Casa do Bolo"/>
+  <tag k="name" v="Casa do Bolo"/>
+  <tag k="shop" v="bakery"/>
+ </node>
+ <node id="4663218693" visible="true" version="1" changeset="45804852" timestamp="2017-02-04T13:08:57Z" user="Cicero Costa" uid="4673010" lat="-4.9701180" lon="-39.0162583">
+  <tag k="comment" v="Casa São José"/>
+  <tag k="name" v="Casa São José"/>
+  <tag k="shop" v="clothes"/>
+  <tag k="symbol" v="Store"/>
+ </node>
+ <node id="4696383365" visible="true" version="1" changeset="46259245" timestamp="2017-02-20T23:19:27Z" user="Cicero Costa" uid="4673010" lat="-4.9699983" lon="-39.0165468"/>
+ <node id="4696383366" visible="true" version="1" changeset="46259245" timestamp="2017-02-20T23:19:27Z" user="Cicero Costa" uid="4673010" lat="-4.9699971" lon="-39.0164471"/>
+ <node id="4696383367" visible="true" version="1" changeset="46259245" timestamp="2017-02-20T23:19:27Z" user="Cicero Costa" uid="4673010" lat="-4.9696970" lon="-39.0164555"/>
+ <node id="4696383368" visible="true" version="1" changeset="46259245" timestamp="2017-02-20T23:19:27Z" user="Cicero Costa" uid="4673010" lat="-4.9696994" lon="-39.0165552"/>
+ <node id="4700168960" visible="true" version="1" changeset="46321606" timestamp="2017-02-22T22:44:40Z" user="Cicero Costa" uid="4673010" lat="-4.9705281" lon="-39.0165179"/>
+ <node id="4700168961" visible="true" version="1" changeset="46321606" timestamp="2017-02-22T22:44:40Z" user="Cicero Costa" uid="4673010" lat="-4.9705264" lon="-39.0162509"/>
+ <node id="4700168962" visible="true" version="1" changeset="46321606" timestamp="2017-02-22T22:44:40Z" user="Cicero Costa" uid="4673010" lat="-4.9705970" lon="-39.0162504"/>
+ <node id="4700168963" visible="true" version="1" changeset="46321606" timestamp="2017-02-22T22:44:40Z" user="Cicero Costa" uid="4673010" lat="-4.9705987" lon="-39.0165174"/>
+ <node id="4781914521" visible="true" version="3" changeset="121692236" timestamp="2022-05-30T05:53:21Z" user="b-jazz-bot" uid="9451067" lat="-4.9701447" lon="-39.0184022">
+  <tag k="addr:housenumber" v="309"/>
+  <tag k="addr:postcode" v="63900-209"/>
+  <tag k="addr:street" v="Rua Basilio Emiliano Pinto"/>
+  <tag k="amenity" v="restaurant"/>
+  <tag k="cuisine" v="ice_cream"/>
+  <tag k="email" v="mariapitangaquixada@gmail.com"/>
+  <tag k="internet_access" v="wlan"/>
+  <tag k="name" v="Maria Pitanga Açaiteria"/>
+  <tag k="name:pt" v="Maria Pitanga Açaiteria"/>
+  <tag k="opening_hours" v="Mo-Sa 12:00-23:00; Su 16:00-23:00"/>
+  <tag k="phone" v="+55 88 9 9873 2424"/>
+  <tag k="website" v="https://www.mariapitangaacaiteria.com.br/"/>
+ </node>
+ <node id="5226347308" visible="true" version="2" changeset="53741897" timestamp="2017-11-13T14:24:11Z" user="Cicero Costa" uid="4673010" lat="-4.9706900" lon="-39.0173012">
+  <tag k="amenity" v="public_building"/>
+  <tag k="comment" v="Cartório Julio Miranda 1 Zona 2 Ofício"/>
+  <tag k="leisure" v="yes"/>
+  <tag k="name" v="Cartório Julio Miranda 1 Zona 2 Ofício"/>
+  <tag k="office" v="government"/>
+ </node>
+ <node id="5308167932" visible="true" version="4" changeset="59992644" timestamp="2018-06-19T22:43:56Z" user="naoliv" uid="463507" lat="-4.9690735" lon="-39.0170366">
+  <tag k="government" v="legislative"/>
+  <tag k="name" v="Câmara Municipal de Quixadá"/>
+  <tag k="office" v="government"/>
+ </node>
+ <node id="7065504883" visible="true" version="1" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9685039" lon="-39.0195939"/>
+ <node id="7065504884" visible="true" version="1" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9684558" lon="-39.0196006"/>
+ <node id="7065527803" visible="true" version="1" changeset="78560855" timestamp="2019-12-18T05:48:25Z" user="KazakhSteppe" uid="10334811" lat="-4.9683035" lon="-39.0196113"/>
+ <node id="7205139862" visible="true" version="1" changeset="80881907" timestamp="2020-02-12T05:07:17Z" user="LeutascherAche" uid="10409646" lat="-4.9685891" lon="-39.0168262"/>
+ <node id="7205139863" visible="true" version="2" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9686139" lon="-39.0173362"/>
+ <node id="7986327258" visible="true" version="1" changeset="92135581" timestamp="2020-10-07T23:39:40Z" user="KAIQUE BRUNO LIMA" uid="11947843" lat="-4.9702169" lon="-39.0209743">
+  <tag k="name" v="DISK-PÃO"/>
+  <tag k="shop" v="bakery"/>
+ </node>
+ <node id="8440885994" visible="true" version="1" changeset="99647205" timestamp="2021-02-20T15:24:54Z" user="Ana Paula Ottonelli" uid="12703535" lat="-4.9700369" lon="-39.0178453">
+  <tag k="addr:city" v="Quixadá"/>
+  <tag k="addr:housenumber" v="254"/>
+  <tag k="addr:postcode" v="63900-209"/>
+  <tag k="addr:street" v="Basilio Pinto"/>
+  <tag k="addr:suburb" v="Centro"/>
+  <tag k="name" v="Arcturo Construções"/>
+  <tag k="office" v="company"/>
+  <tag k="phone" v="+55 85 996054544"/>
+ </node>
+ <node id="8440899623" visible="true" version="1" changeset="99647056" timestamp="2021-02-20T15:22:37Z" user="Ana Paula Ottonelli" uid="12703535" lat="-4.9700048" lon="-39.0178856">
+  <tag k="addr:city" v="Quixadá"/>
+  <tag k="addr:housenumber" v="254"/>
+  <tag k="addr:postcode" v="63900-209"/>
+  <tag k="addr:street" v="Basilio Pinto"/>
+  <tag k="addr:suburb" v="Centro"/>
+  <tag k="name" v="VP Engenharia e Construções"/>
+  <tag k="office" v="company"/>
+  <tag k="phone" v="+55 85 996054544"/>
+ </node>
+ <node id="10969396902" visible="true" version="1" changeset="137212499" timestamp="2023-06-11T16:56:52Z" user="CandidoCunha" uid="7152721" lat="-4.9703535" lon="-39.0245600"/>
+ <node id="10977972243" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692490" lon="-39.0172876"/>
+ <node id="10977972244" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9693596" lon="-39.0172864"/>
+ <node id="10977972245" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9693581" lon="-39.0172157"/>
+ <node id="10977972246" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692472" lon="-39.0172186"/>
+ <node id="10977972247" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692625" lon="-39.0172181"/>
+ <node id="10977972248" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692578" lon="-39.0170147"/>
+ <node id="10977972249" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9693422" lon="-39.0170127"/>
+ <node id="10977972250" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9693468" lon="-39.0172162"/>
+ <node id="10977972251" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692452" lon="-39.0170007"/>
+ <node id="10977972252" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9693585" lon="-39.0169990"/>
+ <node id="10977972253" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9693572" lon="-39.0169125"/>
+ <node id="10977972254" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692439" lon="-39.0169142"/>
+ <node id="10977972255" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692441" lon="-39.0173321"/>
+ <node id="10977972256" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692377" lon="-39.0169003"/>
+ <node id="10977972257" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9691429" lon="-39.0173120"/>
+ <node id="10977972258" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692445" lon="-39.0173113"/>
+ <node id="10977972259" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692378" lon="-39.0169076"/>
+ <node id="10977972260" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9692365" lon="-39.0168714"/>
+ <node id="10977972261" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721" lat="-4.9691365" lon="-39.0168742"/>
+ <node id="10977972262" visible="true" version="2" changeset="178646871" timestamp="2026-02-16T20:01:05Z" user="kaartense" uid="10292935" lat="-4.9693898" lon="-39.0168260"/>
+ <node id="11528442109" visible="true" version="1" changeset="146414575" timestamp="2024-01-18T17:32:56Z" user="meninolucasdedd" uid="10470362" lat="-4.9686386" lon="-39.0190605">
+  <tag k="addr:city" v="Quixadá"/>
+  <tag k="addr:housenumber" v="1784"/>
+  <tag k="addr:postcode" v="63900-221"/>
+  <tag k="addr:street" v="Rua José de Queiroz Pessoa"/>
+  <tag k="addr:suburb" v="Centro"/>
+  <tag k="craft" v="dressmaker"/>
+  <tag k="name" v="Binha Confecções"/>
+  <tag k="operator" v="Binha"/>
+ </node>
+ <node id="13570810044" visible="true" version="1" changeset="178646871" timestamp="2026-02-16T20:01:05Z" user="kaartense" uid="10292935" lat="-4.9694033" lon="-39.0173279"/>
+ <way id="23328858" visible="true" version="3" changeset="178646871" timestamp="2026-02-16T20:01:05Z" user="kaartense" uid="10292935">
+  <nd ref="252615529"/>
+  <nd ref="252616801"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Travessa Amauri Cidade"/>
+  <tag k="source:name" v="CNEFE 2022 / IBGE"/>
+ </way>
+ <way id="23328864" visible="true" version="11" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721">
+  <nd ref="2633398094"/>
+  <nd ref="2068982579"/>
+  <nd ref="2068982576"/>
+  <nd ref="252616261"/>
+  <nd ref="10977972262"/>
+  <nd ref="252615600"/>
+  <nd ref="252616801"/>
+  <nd ref="7205139862"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Rua Tabelião Enéas"/>
+  <tag k="oneway" v="yes"/>
+ </way>
+ <way id="257874463" visible="true" version="11" changeset="137212499" timestamp="2023-06-11T16:56:52Z" user="CandidoCunha" uid="7152721">
+  <nd ref="252616853"/>
+  <nd ref="252644714"/>
+  <nd ref="3793680816"/>
+  <nd ref="2014760297"/>
+  <nd ref="2633376318"/>
+  <nd ref="252616254"/>
+  <nd ref="2633376316"/>
+  <nd ref="3793680825"/>
+  <nd ref="252615170"/>
+  <nd ref="10969396902"/>
+  <nd ref="2633376227"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="maxspeed" v="40"/>
+  <tag k="name" v="Rua Basilio Emiliano Pinto"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="ref" v="CE-265"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="257883646" visible="true" version="5" changeset="43159605" timestamp="2016-10-25T14:28:40Z" user="Thundercel" uid="82797">
+  <nd ref="252616018"/>
+  <nd ref="3793680789"/>
+  <nd ref="252616203"/>
+  <nd ref="2014760294"/>
+  <nd ref="2014760295"/>
+  <nd ref="2014760293"/>
+  <nd ref="2633376257"/>
+  <nd ref="2633376258"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Rua Doutor Eudásio Barroso"/>
+ </way>
+ <way id="290877934" visible="true" version="3" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721">
+  <nd ref="10977972255"/>
+  <nd ref="10977972258"/>
+  <nd ref="10977972259"/>
+  <nd ref="10977972256"/>
+  <nd ref="10977972260"/>
+  <nd ref="252615600"/>
+  <nd ref="2633376343"/>
+  <nd ref="252615145"/>
+  <nd ref="1868898588"/>
+  <tag k="highway" v="footway"/>
+  <tag k="name" v="Calçadão"/>
+ </way>
+ <way id="376025279" visible="true" version="2" changeset="37715100" timestamp="2016-03-09T18:13:27Z" user="Klevinho Santos" uid="3653414">
+  <nd ref="3793680790"/>
+  <nd ref="3793680791"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Travessa Laerte Pinheiro"/>
+ </way>
+ <way id="376025290" visible="true" version="6" changeset="78564373" timestamp="2019-12-18T06:54:55Z" user="KazakhSteppe" uid="10334811">
+  <nd ref="3793680815"/>
+  <nd ref="2633398086"/>
+  <nd ref="2633398103"/>
+  <nd ref="3793680818"/>
+  <nd ref="3793680821"/>
+  <nd ref="3793680816"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Rua Florêncio Lopes"/>
+ </way>
+ <way id="388440119" visible="true" version="5" changeset="126567435" timestamp="2022-09-24T02:00:14Z" user="kaartense" uid="10292935">
+  <nd ref="2633376342"/>
+  <nd ref="252616261"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="name" v="Basilio Pinto"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="ref" v="CE-265"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="388442291" visible="true" version="4" changeset="126567435" timestamp="2022-09-24T02:00:14Z" user="kaartense" uid="10292935">
+  <nd ref="252616261"/>
+  <nd ref="252616178"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="name" v="Basilio Pinto"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="ref" v="CE-265"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="388442292" visible="true" version="6" changeset="178646871" timestamp="2026-02-16T20:01:05Z" user="kaartense" uid="10292935">
+  <nd ref="7205139863"/>
+  <nd ref="252615529"/>
+  <nd ref="252616018"/>
+  <nd ref="10977972255"/>
+  <nd ref="13570810044"/>
+  <nd ref="252616178"/>
+  <nd ref="2068982575"/>
+  <nd ref="2068982578"/>
+  <nd ref="2633398092"/>
+  <nd ref="2068982582"/>
+  <nd ref="2068982584"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Rua Francisco Enéas de Lima"/>
+  <tag k="oneway" v="yes"/>
+ </way>
+ <way id="388442293" visible="true" version="4" changeset="126567435" timestamp="2022-09-24T02:00:14Z" user="kaartense" uid="10292935">
+  <nd ref="252616178"/>
+  <nd ref="252616853"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="name" v="Basilio Pinto"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="ref" v="CE-265"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="388454616" visible="true" version="6" changeset="160037277" timestamp="2024-12-07T19:20:15Z" user="kaartense" uid="10292935">
+  <nd ref="3916515106"/>
+  <nd ref="3916515107"/>
+  <nd ref="3916515108"/>
+  <nd ref="3916515109"/>
+  <nd ref="3916515106"/>
+  <tag k="addr:city" v="Quixaba"/>
+  <tag k="addr:street" v="Rua Solidonio P. de Carvvalho"/>
+  <tag k="addr:suburb" v="Centro"/>
+  <tag k="building" v="yes"/>
+  <tag k="email" v="mpdequixaba@gmail.com"/>
+  <tag k="leisure" v="yes"/>
+  <tag k="name" v="Prefeitura Municipal de Quixabá"/>
+  <tag k="nohousenumber" v="yes"/>
+  <tag k="office" v="government"/>
+  <tag k="phone" v="+55 87 3854-8261;+55 87 3854-8267"/>
+  <tag k="website" v="https://www.quixaba.pe.gov.br/"/>
+ </way>
+ <way id="388454617" visible="true" version="3" changeset="54978495" timestamp="2017-12-28T10:07:38Z" user="Cicero Costa" uid="4673010">
+  <nd ref="3916515110"/>
+  <nd ref="3916515111"/>
+  <nd ref="3916515112"/>
+  <nd ref="3916515113"/>
+  <nd ref="3916515110"/>
+  <tag k="amenity" v="marketplace"/>
+  <tag k="building" v="yes"/>
+  <tag k="comment" v="Câmara Municipal de Quixadá"/>
+ </way>
+ <way id="388454618" visible="true" version="2" changeset="37715100" timestamp="2016-03-09T18:13:28Z" user="Klevinho Santos" uid="3653414">
+  <nd ref="3916515114"/>
+  <nd ref="3916515115"/>
+  <nd ref="3916515116"/>
+  <nd ref="3916515117"/>
+  <nd ref="3916515114"/>
+  <tag k="amenity" v="marketplace"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Mercado Público Municipal"/>
+ </way>
+ <way id="388456584" visible="true" version="9" changeset="168420774" timestamp="2025-07-03T00:02:59Z" user="kaartense" uid="10292935">
+  <nd ref="252644714"/>
+  <nd ref="3793680822"/>
+  <nd ref="3793680817"/>
+  <nd ref="1868903739"/>
+  <nd ref="2014760300"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="name" v="Rua Rui Barbosa"/>
+  <tag k="ref" v="CE-060"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="388460217" visible="true" version="5" changeset="126567435" timestamp="2022-09-24T02:00:14Z" user="kaartense" uid="10292935">
+  <nd ref="2633398126"/>
+  <nd ref="7065527803"/>
+  <nd ref="7065504884"/>
+  <nd ref="7065504883"/>
+  <nd ref="252616419"/>
+  <nd ref="252616203"/>
+  <nd ref="252644714"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="name" v="Rua Rui Barbosa"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="388460218" visible="true" version="3" changeset="78564373" timestamp="2019-12-18T06:54:55Z" user="KazakhSteppe" uid="10334811">
+  <nd ref="3793680816"/>
+  <nd ref="2014760294"/>
+  <nd ref="2014760283"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Rua Florêncio Lopes"/>
+  <tag k="oneway" v="yes"/>
+ </way>
+ <way id="402748110" visible="true" version="3" changeset="126748354" timestamp="2022-09-28T16:40:32Z" user="Gustavo22Soares" uid="10460642">
+  <nd ref="4051556923"/>
+  <nd ref="4051556924"/>
+  <nd ref="4051556925"/>
+  <nd ref="4051556926"/>
+  <nd ref="4051556923"/>
+  <tag k="amenity" v="bank"/>
+  <tag k="brand" v="Caixa Econômica Federal"/>
+  <tag k="brand:wikidata" v="Q835283"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
+  <tag k="height" v="3"/>
+  <tag k="name" v="Caixa Econômica Federal"/>
+ </way>
+ <way id="402748112" visible="true" version="1" changeset="37715100" timestamp="2016-03-09T18:13:25Z" user="Klevinho Santos" uid="3653414">
+  <nd ref="4051556931"/>
+  <nd ref="4051556932"/>
+  <nd ref="4051556933"/>
+  <nd ref="4051556934"/>
+  <nd ref="4051556931"/>
+  <tag k="amenity" v="post_office"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Correios de Quixadá"/>
+ </way>
+ <way id="437802283" visible="true" version="1" changeset="41537057" timestamp="2016-08-18T15:57:27Z" user="Daniel de Góes Nepomuceno" uid="1717892">
+  <nd ref="4356017706"/>
+  <nd ref="4356017705"/>
+  <nd ref="4356017707"/>
+  <nd ref="4356017708"/>
+  <nd ref="4356017706"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
+  <tag k="height" v="4"/>
+  <tag k="name" v="Casa Girafa"/>
+  <tag k="payment:american_express" v="yes"/>
+  <tag k="payment:maestro" v="yes"/>
+  <tag k="payment:mastercard" v="yes"/>
+  <tag k="payment:visa" v="yes"/>
+  <tag k="payment:visa_debit" v="yes"/>
+  <tag k="payment:visa_electron" v="yes"/>
+  <tag k="shop" v="variety_store"/>
+ </way>
+ <way id="437802300" visible="true" version="2" changeset="54872807" timestamp="2017-12-23T20:59:14Z" user="Cicero Costa" uid="4673010">
+  <nd ref="4356017710"/>
+  <nd ref="4356017709"/>
+  <nd ref="4356017711"/>
+  <nd ref="4356017712"/>
+  <nd ref="4356017710"/>
+  <tag k="amenity" v="ice_cream"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
+  <tag k="height" v="3"/>
+  <tag k="name" v="Sorveteria o Nivaldo"/>
+ </way>
+ <way id="475960276" visible="true" version="4" changeset="158247517" timestamp="2024-10-23T11:00:39Z" user="claudia10" uid="557496">
+  <nd ref="4696383365"/>
+  <nd ref="4696383366"/>
+  <nd ref="4696383367"/>
+  <nd ref="4696383368"/>
+  <nd ref="4696383365"/>
+  <tag k="building" v="commercial"/>
+  <tag k="building:levels" v="1"/>
+  <tag k="leisure" v="yes"/>
+  <tag k="level" v="1"/>
+  <tag k="name" v="Casa Vitória A loja do Seu Osvaldo"/>
+  <tag k="shop" v="department_store"/>
+ </way>
+ <way id="476425641" visible="true" version="3" changeset="126748325" timestamp="2022-09-28T16:39:33Z" user="Gustavo22Soares" uid="10460642">
+  <nd ref="4700168960"/>
+  <nd ref="4700168961"/>
+  <nd ref="4700168962"/>
+  <nd ref="4700168963"/>
+  <nd ref="4700168960"/>
+  <tag k="amenity" v="pharmacy"/>
+  <tag k="brand" v="Pague Menos"/>
+  <tag k="brand:wikidata" v="Q7124466"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
+  <tag k="healthcare" v="pharmacy"/>
+  <tag k="height" v="3"/>
+  <tag k="name" v="Pague Menos"/>
+ </way>
+ <way id="1182143264" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721">
+  <nd ref="10977972243"/>
+  <nd ref="10977972244"/>
+  <nd ref="10977972245"/>
+  <nd ref="10977972250"/>
+  <nd ref="10977972247"/>
+  <nd ref="10977972246"/>
+  <nd ref="10977972243"/>
+  <tag k="building" v="yes"/>
+  <tag k="shop" v="yes"/>
+ </way>
+ <way id="1182143265" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721">
+  <nd ref="10977972247"/>
+  <nd ref="10977972248"/>
+  <nd ref="10977972249"/>
+  <nd ref="10977972250"/>
+  <nd ref="10977972247"/>
+  <tag k="building" v="yes"/>
+  <tag k="shop" v="yes"/>
+ </way>
+ <way id="1182143266" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721">
+  <nd ref="10977972251"/>
+  <nd ref="10977972252"/>
+  <nd ref="10977972253"/>
+  <nd ref="10977972254"/>
+  <nd ref="10977972251"/>
+  <tag k="building" v="yes"/>
+  <tag k="shop" v="yes"/>
+ </way>
+ <way id="1182143267" visible="true" version="1" changeset="137350102" timestamp="2023-06-15T02:11:14Z" user="CandidoCunha" uid="7152721">
+  <nd ref="3916515113"/>
+  <nd ref="10977972257"/>
+  <nd ref="10977972258"/>
+  <nd ref="10977972259"/>
+  <nd ref="10977972260"/>
+  <nd ref="10977972261"/>
+  <nd ref="3916515112"/>
+  <nd ref="3916515113"/>
+  <tag k="leisure" v="park"/>
+ </way>
+ <way id="1390125929" visible="true" version="1" changeset="166835810" timestamp="2025-05-27T16:53:45Z" user="MaroniRiver" uid="22048881">
+  <nd ref="3793680789"/>
+  <nd ref="252616785"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Rua Doutor Rui Maia"/>
+  <tag k="oneway" v="yes"/>
+ </way>
+ <way id="1390125930" visible="true" version="2" changeset="166835855" timestamp="2025-05-27T16:55:04Z" user="MaroniRiver" uid="22048881">
+  <nd ref="252616853"/>
+  <nd ref="3793680789"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Rua Doutor Rui Maia"/>
+  <tag k="oneway" v="yes"/>
+ </way>
+ <way id="1390125931" visible="true" version="1" changeset="166835810" timestamp="2025-05-27T16:53:45Z" user="MaroniRiver" uid="22048881">
+  <nd ref="2633398100"/>
+  <nd ref="252616853"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Rua Doutor Rui Maia"/>
+  <tag k="oneway" v="yes"/>
+ </way>
+ <way id="1479391980" visible="true" version="1" changeset="178646871" timestamp="2026-02-16T20:01:05Z" user="kaartense" uid="10292935">
+  <nd ref="10977972262"/>
+  <nd ref="13570810044"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Travessa Leovigildo Barreto"/>
+  <tag k="source:name" v="CNEFE 2022 / IBGE"/>
+ </way>
+ <relation id="5807754" visible="true" version="1" changeset="36240773" timestamp="2015-12-29T13:15:50Z" user="Daniel de Góes Nepomuceno" uid="1717892">
+  <member type="way" ref="23328869" role="from"/>
+  <member type="node" ref="2633376342" role="via"/>
+  <member type="way" ref="388440120" role="to"/>
+  <tag k="restriction" v="no_left_turn"/>
+  <tag k="type" v="restriction"/>
+ </relation>
+</osm>
