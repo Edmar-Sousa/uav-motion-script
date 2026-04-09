@@ -64,15 +64,20 @@ class OsmHandler(osmium.SimpleHandler):
 
 
 class TrajectoryPlanner:
-    def __init__(self, osm_path: str):
+    def __init__(self, osm_path: str, uav_per_point):
         self.osm_path = osm_path
         self.osm_handler = OsmHandler(self.callback)
+
+        self.uav_per_point = uav_per_point
 
         self.geod = pyproj.Geod(ellps="WGS84")
         self.map = folium.Map(location=[-4.9688697, -39.017628], zoom_start=10)
 
+        self.min_position = [0, 0]
+        self.max_position = [0, 0]
 
-    def __generate_destination_point__(self, lat, long, max_distance = 2):
+
+    def __generate_destination_point__(self, lat, long, max_distance = 1):
         degree = random.randint(0, 360)
         distance = max_distance * 1000 * numpy.sqrt(random.random())
 
@@ -87,22 +92,53 @@ class TrajectoryPlanner:
     
     def callback(self, position, tags):
         name = tags['name'] if 'name' in tags.keys() else tags['comment']
-        delivery_destination = self.__generate_destination_point__(position[0], position[1])
-        
+
         folium.Marker(
             location=position,
             popup=name
         ).add_to(self.map)
 
-        folium.Marker(
-            location=delivery_destination,
-            popup=f'{name} - dest',
-            icon=folium.Icon(color="red")
-        ).add_to(self.map)
+        for i in range(0, self.uav_per_point):
+            delivery_destination = self.__generate_destination_point__(position[0], position[1])
 
-        self.map.save('trajectory.html')
+
+            if self.min_position[0] == 0 and self.max_position[0] == 0:
+                self.min_position = [delivery_destination[0], delivery_destination[1]]
+                self.max_position = [delivery_destination[0], delivery_destination[1]]
+
+            else:
+                self.min_position = [ 
+                    min(self.min_position[0], delivery_destination[0]), 
+                    min(self.min_position[1], delivery_destination[1])
+                ]
+
+                self.max_position = [
+                    max(self.max_position[0], delivery_destination[0]),
+                    max(self.max_position[1], delivery_destination[1]),
+                ]
+
+
+            folium.Marker(
+                location=delivery_destination,
+                popup=f'{name} - dest - uav {i}',
+                icon=folium.Icon(color="red")
+            ).add_to(self.map)
 
     def generate(self):
         self.__check_file_osm_exists__()
 
         self.osm_handler.apply_file(self.osm_path, locations=True)
+
+        folium.Marker(
+            location=self.max_position,
+            popup=f'max pos',
+            icon=folium.Icon(color='green')
+        ).add_to(self.map)
+
+        folium.Marker(
+            location=self.min_position,
+            popup=f'min pos',
+            icon=folium.Icon(color='green')
+        ).add_to(self.map)
+
+        self.map.save('trajectory.html')

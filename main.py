@@ -1,4 +1,3 @@
-
 import argparse
 
 from uav.trajectory import TrajectoryPlanner
@@ -14,6 +13,7 @@ def get_args_script():
     )
 
     parser.add_argument('--osm')
+    parser.add_argument('--number-uav', type=int)
     args = parser.parse_args()
 
     return args
@@ -22,20 +22,20 @@ def get_args_script():
 def main():
     args = get_args_script()
 
-    trajectory_planner = TrajectoryPlanner(args.osm)
+    trajectory_planner = TrajectoryPlanner(args.osm, args.number_uav)
     trajectory_planner.generate()
 
     # position_controller = PositionController(trajectory_planner)
     # altitude_controller = AltitudeController(position_controller)
     # motor_controller = MotorController(position_controller, altitude_controller)
-    
+
     # vant = Vant(
     #     motor_controller=motor_controller,
     #     position_controller=position_controller,
     #     altitude_controller=altitude_controller
     # )
     # draw_vant = DrawVant(vant)
-    
+
     # draw_vant.show()
 
 
