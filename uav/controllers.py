@@ -8,7 +8,7 @@ from .constants import K, L, B, G, Ixx, Iyy, Izz
 class TrajectoryPlanner:
     def __init__(self):
         self.__position_tracker__ = [
-            ( -20, 20, 20),
+            (20, 20, 20),
         ]
 
     def get_position_tracker(self):
@@ -51,15 +51,11 @@ class PositionController(Controller):
         self.waypoint = path_planner.get_position_tracker()
         self.step = 0
 
-        self.kp = 0.5
-        self.ki = 0.04
-        self.kd = 0.6
+        self.pid_x = PIDController()
+        self.pid_z = PIDController()
+        self.psi_pid = PIDController()
+        self.theta_pid = PIDController()
 
-        self.__update_pid__()
-
-    def __update_pid__(self):
-        self.pid_x = PIDController(xd=self.step_point[0], kp=self.kp, kd=self.kd, ki=self.ki)
-        self.pid_z = PIDController(xd=self.step_point[2], kp=self.kp, kd=self.kd, ki=self.ki)
 
     @property
     def step_point(self):
@@ -69,67 +65,66 @@ class PositionController(Controller):
     def __psi__(self):
         uav_x = self.get_state_uav('x')
         uav_y = self.get_state_uav('y')
+
         dest_x = self.step_point[0]
         dest_y = self.step_point[1]
 
         return np.atan2(dest_y - uav_y, dest_x - uav_x)
 
 
+    # def __tau_theta__(self, dt):
+    #     theta_d = self.__theta__(dt)
+    #     theta = self.get_state_uav('theta')
+
+    #     result = self.theta_pid.u(theta, theta_d, dt)
+
+    #     return Iyy * result
+
+
+    def __tau_psi__(self, dt):
+        psi_d = self.__psi__()
+        psi = self.get_state_uav('psi')
+        result = self.psi_pid.u(psi, psi_d, dt)
+
+        return Izz * result
+    
+
+    def __theta__(self, dt):
+        xd = self.step_point[0]
+        x = self.get_state_uav('x')
+        a = self.pid_x.u(x, xd, dt)
+
+        # TODO: colocar validação de valor maximo do angulo
+        return np.arctan(a / G)
+
+
     def __thrust__(self, dt):
+        z_d = self.step_point[2]
         z = self.get_state_uav('z')
         mass = self.get_state_uav('mass')
         theta = self.get_state_uav('theta')
         phi = self.get_state_uav('phi')
 
-        result = self.pid_z.u(z, dt)
+        result = self.pid_z.u(z, z_d, dt)
 
         return (G + result) * np.cos(theta) * np.cos(phi) * mass
 
-    def get_angles(self):
-        psi = self.__psi__()
-
-        return { 'phi': 0, 'theta': 0, 'psi': psi }
 
     def handler(self, dt):
         T = self.__thrust__(dt)
-        psi = self.__psi__()
-
-        return { 'phi': 0, 'theta': 0, 'psi': psi, 'T': T }
-
-
-class AltitudeController(Controller):
-    ''''
-        1. Precisa dos angulos 𝜑, 𝜃, 𝜓
-        2. Precisa dos angulos 𝜑*, 𝜃*, 𝜓* desejada
-        3. Calcula τφ​,τθ​,τψ
-    '''
-    def __init__(self, position_controller: PositionController):
-        self.position_controller = position_controller
-
-        self.kp = 0.5
-        self.ki = 0.04
-        self.kd = 0.6
-    
-        self.__update_pid__()
-
-
-    def __update_pid__(self):
-        angles = self.position_controller.get_angles()
-
-        self.psi_pid = PIDController(xd=angles['psi'], kp=self.kp, kd=self.kd, ki=self.ki)
-
-
-    def __tau_psi__(self, dt):
-        psi = self.get_state_uav('psi')
-        result = self.psi_pid.u(psi, dt)
-
-        return Izz * result
-
-
-    def handler(self, dt):
         tau_psi = self.__tau_psi__(dt)
+        # tau_theta = self.__tau_theta__(dt)
+        # theta = self.__theta__(dt)
 
-        return { 'tau_phi': 0, 'tau_theta': 0, 'tau_psi': tau_psi }
+        return { 
+            'phi': 0, 
+            'theta': 0, 
+            'psi': 0, 
+            'tau_psi': tau_psi,
+            'tau_theta': 0,
+            'T': T
+        }
+
 
 
 class MotorController(Controller): 
@@ -137,9 +132,8 @@ class MotorController(Controller):
         1. Precisda de thrust e torques
         2. Gera a velocidade dos motores
     '''
-    def __init__(self, position_controller: PositionController, altitude_controller: AltitudeController):
+    def __init__(self, position_controller: PositionController):
         self.pos_controller = position_controller
-        self.altitude_controller = altitude_controller
 
     def __motors_mixer__(self, T, tau_phi, tau_theta, tau_psi):
         
@@ -151,11 +145,9 @@ class MotorController(Controller):
         return np.sqrt(w1), np.sqrt(w2), np.sqrt(w3), np.sqrt(w4)
 
     def handler(self, dt):
-
         pos = self.pos_controller.handler(dt)
-        angles = self.altitude_controller.handler(dt)
 
-        w1, w2, w3, w4 = self.__motors_mixer__(pos['T'], 0, 0, angles['tau_psi'])
+        w1, w2, w3, w4 = self.__motors_mixer__(pos['T'], 0, pos['tau_theta'], pos['tau_psi'])
 
         return { 'w1': w1, 'w2': w2, 'w3': w3, 'w4': w4 }
 
@@ -217,9 +209,6 @@ class ControllerExemplo:
     def __tau_psi__(self, psi, dt):
         result = self.pid_tau_psi.u(psi, dt)
         return Izz * result
-
-
-    
 
 
     def handler(self, pos, angular, dt):

@@ -10,7 +10,6 @@ class Vant:
 
         self.motor_controller = kargs['motor_controller']
         self.position_controller = kargs['position_controller']
-        self.altitude_controller = kargs['altitude_controller']
 
         # posição 
         self.x, self.y, self.z = 0, 0, 20

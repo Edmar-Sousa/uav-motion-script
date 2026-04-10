@@ -2,21 +2,19 @@
 
 class PIDController:
     def __init__(self, **kargs):
-        self.xd = kargs['xd']
-
-        self.kp = kargs['kp']
-        self.kd = kargs['kd']
-        self.ki = kargs['ki']
+        self.kp = 0.5
+        self.ki = 0.04
+        self.kd = 0.6
 
         self.integral = 0
         self.prev_error = 0
     
 
-    def u(self, x, dt):
+    def u(self, x, xd, dt):
         if dt == 0:
             return 0
         
-        error = self.xd - x
+        error = xd - x
 
         self.integral += error * dt
         derivative = (error - self.prev_error) / dt
