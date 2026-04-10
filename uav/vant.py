@@ -13,7 +13,7 @@ class Vant:
         self.altitude_controller = kargs['altitude_controller']
 
         # posição 
-        self.x, self.y, self.z = 0, 0, 0
+        self.x, self.y, self.z = 0, 0, 20
         self.phi, self.theta, self.psi = 0, 0, 0
 
         # velocidades

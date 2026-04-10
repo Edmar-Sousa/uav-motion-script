@@ -8,10 +8,7 @@ from .constants import K, L, B, G, Ixx, Iyy, Izz
 class TrajectoryPlanner:
     def __init__(self):
         self.__position_tracker__ = [
-            ( 0,  0, 10),
-            (20,  0, 10),
-            (20, 20, 10),
-            ( 0, 20, 10),
+            ( -20, 20, 20),
         ]
 
     def get_position_tracker(self):
@@ -52,12 +49,30 @@ class PositionController(Controller):
 
     def __init__(self, path_planner: TrajectoryPlanner):
         self.waypoint = path_planner.get_position_tracker()
+        self.step = 0
 
         self.kp = 0.5
         self.ki = 0.04
         self.kd = 0.6
 
-        self.pid_z = PIDController(xd=20, kp=self.kp, kd=self.kd, ki=self.ki)
+        self.__update_pid__()
+
+    def __update_pid__(self):
+        self.pid_x = PIDController(xd=self.step_point[0], kp=self.kp, kd=self.kd, ki=self.ki)
+        self.pid_z = PIDController(xd=self.step_point[2], kp=self.kp, kd=self.kd, ki=self.ki)
+
+    @property
+    def step_point(self):
+        return self.waypoint[self.step]
+
+
+    def __psi__(self):
+        uav_x = self.get_state_uav('x')
+        uav_y = self.get_state_uav('y')
+        dest_x = self.step_point[0]
+        dest_y = self.step_point[1]
+
+        return np.atan2(dest_y - uav_y, dest_x - uav_x)
 
 
     def __thrust__(self, dt):
@@ -70,11 +85,16 @@ class PositionController(Controller):
 
         return (G + result) * np.cos(theta) * np.cos(phi) * mass
 
+    def get_angles(self):
+        psi = self.__psi__()
+
+        return { 'phi': 0, 'theta': 0, 'psi': psi }
 
     def handler(self, dt):
         T = self.__thrust__(dt)
+        psi = self.__psi__()
 
-        return { 'phi': 0, 'theta': 0, 'psi': 0, 'T': T }
+        return { 'phi': 0, 'theta': 0, 'psi': psi, 'T': T }
 
 
 class AltitudeController(Controller):
@@ -84,10 +104,32 @@ class AltitudeController(Controller):
         3. Calcula τφ​,τθ​,τψ
     '''
     def __init__(self, position_controller: PositionController):
-        pass
+        self.position_controller = position_controller
+
+        self.kp = 0.5
+        self.ki = 0.04
+        self.kd = 0.6
+    
+        self.__update_pid__()
+
+
+    def __update_pid__(self):
+        angles = self.position_controller.get_angles()
+
+        self.psi_pid = PIDController(xd=angles['psi'], kp=self.kp, kd=self.kd, ki=self.ki)
+
+
+    def __tau_psi__(self, dt):
+        psi = self.get_state_uav('psi')
+        result = self.psi_pid.u(psi, dt)
+
+        return Izz * result
+
 
     def handler(self, dt):
-        return { 'tau_phi': 0, 'tau_theta': 0, 'tau_psi': 0 }
+        tau_psi = self.__tau_psi__(dt)
+
+        return { 'tau_phi': 0, 'tau_theta': 0, 'tau_psi': tau_psi }
 
 
 class MotorController(Controller): 
@@ -110,10 +152,10 @@ class MotorController(Controller):
 
     def handler(self, dt):
 
-        self.pos = self.pos_controller.handler(dt)
-        self.angles = self.altitude_controller.handler(dt)
+        pos = self.pos_controller.handler(dt)
+        angles = self.altitude_controller.handler(dt)
 
-        w1, w2, w3, w4 = self.__motors_mixer__(self.pos['T'], 0, 0, 0)
+        w1, w2, w3, w4 = self.__motors_mixer__(pos['T'], 0, 0, angles['tau_psi'])
 
         return { 'w1': w1, 'w2': w2, 'w3': w3, 'w4': w4 }
 
