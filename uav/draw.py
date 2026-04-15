@@ -1,6 +1,9 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
+import matplotlib
+matplotlib.use('TkAgg')  # Use TkAgg backend for better performance
+
+import matplotlib.pyplot as plt
 
 from matplotlib.animation import FuncAnimation
 from .utils import rotation_matrix
