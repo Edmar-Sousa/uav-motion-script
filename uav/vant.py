@@ -12,7 +12,7 @@ class Vant:
         self.position_controller = kargs['position_controller']
 
         # posição 
-        self.x, self.y, self.z = 0, 0, 20
+        self.x, self.y, self.z = 0, 0, 0
         self.phi, self.theta, self.psi = 0, 0, 0
 
         # velocidades
