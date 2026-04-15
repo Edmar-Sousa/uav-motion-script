@@ -1,7 +1,7 @@
 import argparse
 
 # from uav.trajectory import TrajectoryPlanner
-from uav.controllers import PositionController, MotorController, TrajectoryPlanner
+from uav.controllers import UavState, TrajectoryPlanner, CascadeController, MotorController
 from uav.vant import Vant
 from uav.draw import DrawVant
 
@@ -25,13 +25,14 @@ def main():
     # trajectory_planner = TrajectoryPlanner(args.osm, args.number_uav)
     # trajectory_planner.generate()
 
+    uav_state = UavState(x=0, y=0, z=0, phi=0, theta=0, psi=0, mass=1)
     trajectory_planner = TrajectoryPlanner()
-
-    position_controller = PositionController(trajectory_planner)
-    motor_controller = MotorController(position_controller)
+    position_controller = CascadeController(trajectory_planner)
+    motors_controller = MotorController()
 
     vant = Vant(
-        motor_controller=motor_controller,
+        uav_state,
+        motor_controller=motors_controller,
         position_controller=position_controller,
     )
     draw_vant = DrawVant(vant)

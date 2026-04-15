@@ -5,15 +5,16 @@ from .utils import rotation_matrix
 
 
 class Vant:
-    def __init__(self, **kargs):
-        self.m = 1
+    def __init__(self, state, **kargs):
+        self.m = state.mass
+        self.state = state
 
-        self.motor_controller = kargs['motor_controller']
-        self.position_controller = kargs['position_controller']
+        self.motor_controller = kargs.get('motor_controller')
+        self.position_controller = kargs.get('position_controller')
 
         # posição 
-        self.x, self.y, self.z = 0, 0, 0
-        self.phi, self.theta, self.psi = 0, 0, 0
+        self.x, self.y, self.z = state.x, state.y, state.z
+        self.phi, self.theta, self.psi = state.phi, state.theta, state.psi
 
         # velocidades
         self.p, self.q, self.r = 0, 0, 0
@@ -47,13 +48,19 @@ class Vant:
         return np.array([self.p, self.q, self.r]).reshape(3, 1)
 
 
-    @property
-    def uav_state(self):
+    def __update_state__(self):
         x, y, z = self.linear_position.flatten()
         phi, theta, psi = self.angular_position.flatten()
-        m = self.m
 
-        return [x, y, z, phi, theta, psi, m]
+        self.state.x = x
+        self.state.y = y
+        self.state.z = z
+
+        self.state.phi = phi
+        self.state.theta = theta
+        self.state.psi = psi
+
+        self.state.mass = self.m
     
 
     def __thrust__(self):
@@ -75,11 +82,6 @@ class Vant:
 
     def __fd__(self):
         return self.drag @ self.linear_velocity
-    
-
-    def __update_state_controllers__(self):
-        uav_state = self.uav_state
-        self.position_controller.set_state_uav(uav_state)
 
 
     def acceleration(self):
@@ -99,12 +101,8 @@ class Vant:
 
 
     def step(self, dt):
-        velocities = self.motor_controller.handler(dt)
-
-        self.w1 = velocities['w1']
-        self.w2 = velocities['w2']
-        self.w3 = velocities['w3']
-        self.w4 = velocities['w4']
+        T, tau_phi, tau_theta, tau_psi = self.position_controller.update(self.state, dt)
+        self.w1, self.w2, self.w3, self.w4 = self.motor_controller.motors_mixer(T, tau_phi, tau_theta, tau_psi)
 
         angular = self.angular_acceleration()
 
@@ -132,7 +130,11 @@ class Vant:
         self.y = s[1, 0]
         self.z = s[2, 0]
 
-        self.__update_state_controllers__()
+        self.__update_state__()
 
-        return self.uav_state
+        return [
+            self.x, self.y, self.z,
+            self.phi, self.theta, self.psi,
+            self.m
+        ]
 
