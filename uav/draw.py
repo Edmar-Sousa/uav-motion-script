@@ -63,6 +63,6 @@ class DrawVant:
         self.ax.set_ylim(-20, 20)
         self.ax.set_zlim(0, 40.0)
 
-        ani = FuncAnimation(fig=self.fig, func=self.update, frames=100, interval=100)
+        ani = FuncAnimation(fig=self.fig, func=self.update, frames=1000, interval=10)
         # ani.save("uav-animation.mp4", writer="ffmpeg", fps=30)
         plt.show()

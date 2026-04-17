@@ -22,10 +22,8 @@ class UavState:
 class TrajectoryPlanner:
     def __init__(self):
         self.__position_tracker__ = [
-            (20, 20, 20),
-            (-20, 20, 20),
-            (-20, -20, 20),
-            (20, -20, 20)
+            (0, 0, 0),
+            (10, 10, 10),
         ]
 
         self.step = 0
